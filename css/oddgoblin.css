@@ -1,0 +1,27 @@
+body {
+  /* background-color: #7f459b; */
+  background-color: #31183f;
+  color:white;
+  /*  */
+  background: url('../images/bkg.jpg') center no-repeat;
+  background-size: cover;
+  background-position: top;
+
+}
+
+#logo {
+  margin-top: 5%;
+  height: auto;
+  min-width: 200px;
+  width: 30%
+}
+
+#screen {
+    /* */
+    background: url('../images/screen_small.png') no-repeat;
+    background-size: contain;
+    min-height: 500px;
+    width: auto%;
+    height: 100%;
+    /* background-color: #ffffaa; */
+}
