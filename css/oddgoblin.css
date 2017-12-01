@@ -1,9 +1,11 @@
 body {
+    font-family: 'Roboto', sans-serif;
   /* background-color: #7f459b; */
   background-color: #31183f;
+    /*
   color:white;
-  /*  */
-  background: url('../images/bkg.jpg') center no-repeat;
+    */
+  background: url('../images/bg2.jpg') center no-repeat;
   background-size: cover;
   background-position: top;
 
@@ -18,7 +20,7 @@ body {
 
 #screen {
     /* */
-    background: url('../images/screen_small.png') no-repeat;
+    background: url('../images/screen_large.png') no-repeat;
     background-size: contain;
     min-height: 500px;
     width: auto%;
