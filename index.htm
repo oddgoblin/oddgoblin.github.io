@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>OddGoblin</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<link rel="preload" href="./fonts/VanguardCF-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./fonts/BrutalType.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="https://use.fontawesome.com/releases/v5.0.10/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<body>
+		<img class="logo" src="./oddgoblin.png" alt="OddGoblin&reg;">
+		<div class="menu-button" id="menu-button">
+			<i class="menu-open-button  fas fa-bars"></i>
+			<i class="menu-close-button fas fa-times"></i>
+		</div>
+		<nav id="nav" class="nav">
+			<a class="anchor-link" id="nav-home" href="#home">Home</a>
+			<a class="anchor-link" id="nav-signup" href="#signup">Sign up</a>
+			<a class="anchor-link" id="nav-about" href="#about">About</a>
+			<a class="anchor-link" id="nav-contact" href="#contact">Contact</a>
+		</nav>
+		<div class="page-container">
+			<section class="page home-page" id="home">
+				<div class="page-content">
+					<h1>Hey there stranger</h1>
+					<p>
+						Welcome to Oddgoblin.
+						We are currently busy building awsome stuff for the esport community.
+						Details regarding the launch of Oddgoblin will soon be available.
+					</p>
+					<a href="#signup" class="more-info-link anchor-link"><i class="fas fa-chevron-down"></i>More info</a>
+				</div>
+			</section>
+			<section class="page signup-page" id="signup">
+				<div class="page-content">
+					<h1>Sign up!</h1>
+					<p>
+						Being the first to know always feels great…
+						Signing up to our beta launch gives you exclusive promotions and updates!
+					</p>
+					<form class="signup-form row" method="POST" action="javascript:alert('Not yet implemented.')">
+						<input type="email" name="email" class="signup-email" placeholder="Your e-mail address" required="">
+						<input type="submit" class="signup-submit" value="Get notified">
+					</form>
+				</div>
+			</section>
+			<section class="page about-page" id="about">
+				<div class="page-content">
+					<h1>About us</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae blandit tortor, porttitor dapibus dui. Praesent finibus condimentum justo, ac sagittis lorem iaculis eget. Sed in maximus tortor, at venenatis lectus. Morbi luctus, felis non vestibulum blandit, mauris magna bibendum ante, quis feugiat metus justo nec metus. In eu auctor mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet velit et massa tempor malesuada. Pellentesque viverra leo a augue sagittis, in lobortis nunc commodo. Donec quis augue eleifend, laoreet nisl gravida, scelerisque tortor.
+					</p>
+					<p>
+						Morbi sollicitudin eros sit amet laoreet iaculis. Fusce hendrerit lectus nibh, id pulvinar augue tincidunt vel. Donec facilisis, est nec cursus aliquam, lectus risus accumsan neque, eu mattis urna neque quis sapien. Duis bibendum neque id dolor tincidunt gravida non ac ex. Donec iaculis, risus vel congue vulputate, enim nisl tristique nunc, in maximus velit sem eu libero. Quisque ante diam, gravida a imperdiet id, dignissim id arcu. Etiam rhoncus fermentum est ac bibendum.
+					</p>
+				</div>
+			</section>
+			<section class="page contact-page dark-page" id="contact">
+				<div class="page-content">
+					<h1>Get in touch</h1>
+					<p>Want to reach out, just add your info and we get in touch with you.</p>
+					<form class="contact-form rows" method="POST" action="javascript:alert('Not yet implemented.')">
+						<div class="row">
+							<input type="text" name="name" class="contact-name" placeholder="Name" required=""><input type="email" name="email" class="contact-email" placeholder="E-mail" required="">
+						</div>
+						<div class="row">
+							<input type="text" name="message" class="contact-message" placeholder="Your message" required="">
+						</div>
+						<div class="row">
+							<label class="contact-newsletter label">
+								<input class="switch" type="checkbox">
+								<span class="label-text">I want to receive your Weekly Newsletter</span>
+							</label>
+						</div>
+						<input type="submit" class="contact-submit" value="Send message">
+					</form>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
