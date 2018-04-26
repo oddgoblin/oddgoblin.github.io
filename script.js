@@ -2,7 +2,8 @@ var scrollIntervalID = undefined;
 
 function init() {
 	var anchorLinks = document.getElementsByClassName("anchor-link");
-	for (var link of anchorLinks) {
+	for (var i = 0; i < anchorLinks.length; i++) {
+		var link = anchorLinks.item(i);
 		link.addEventListener("click", navHandler.bind(null, link));
 	}
 	document.addEventListener("scroll", onScroll);
@@ -24,7 +25,8 @@ function onScroll(event) {
 	var current = null;
 	var center = window.scrollY + window.innerHeight / 2;
 	var pages = document.getElementsByClassName("page");
-	for (var page of pages) {
+	for (var i = 0; i < pages.length; i++) {
+		var page = pages[i];
 		var navItem = document.getElementById("nav-" + page.id);
 		if (current === null && center <= page.offsetTop + page.offsetHeight) {
 			navItem.classList.add("current");
@@ -32,6 +34,9 @@ function onScroll(event) {
 		} else {
 			navItem.classList.remove("current");
 		}
+	}
+	if (current === null) {
+		return;
 	}
 	if (current.classList.contains("dark-page")) {
 		document.body.classList.add("on-dark-page");
@@ -48,15 +53,16 @@ function onWheel(event) {
 		event.preventDefault();
 		return;
 	}
+	var i, page;
 	var pages = document.getElementsByClassName("page");
 	var top = window.scrollY;
 	var bottom = top + window.innerHeight;
 	if (event.deltaY < 0) {
-		for (var page of pages) {
+		for (i = 0; i < pages.length; i++) {
+			page = pages[i];
 			// -1 is to account for rounding errors due to zoom in browsers.
 			if (top - 1 <= page.offsetTop && page.offsetTop < bottom - 1) {
 				var prev = page.previousElementSibling;
-				console.log(prev, "prev");
 				if (prev) {
 					scrollTo(prev.offsetTop + prev.offsetHeight - window.innerHeight);
 					event.preventDefault();
@@ -65,10 +71,9 @@ function onWheel(event) {
 			}
 		}
 	} else if (event.deltaY > 0) {
-		for (var page of pages) {
+		for (i = 0; i < pages.length; i++) {
+			page = pages[i];
 			if (top + 1 < page.offsetTop && page.offsetTop <= bottom + 1) {
-				var next = page.nextElementSibling;
-				console.log(next, "next");
 				if (page) {
 					scrollTo(page.offsetTop);
 					event.preventDefault();
