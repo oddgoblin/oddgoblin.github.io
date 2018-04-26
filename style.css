@@ -101,7 +101,7 @@ input[type="email"] {
 	height: 3em;
 	padding: 0 1.25em;
 	border: none;
-	max-width: calc(100% - 3.5em);
+	margin:15px 0;
 }
 
 .dark-page .contact-form input[type="text"],
@@ -117,8 +117,10 @@ input[type="submit"] {
 	color: #000000;
 	font: inherit;
 	height: 3em;
-	padding: 0 1.25em;
+	padding:0px;
 	border: none;
+	margin:15px 0;
+
 }
 
 .close-button {
@@ -190,12 +192,14 @@ input[type="submit"] {
 	background: #FFFFFF;
 }
 .signup-submit,.contact-submit{
-	flex-grow: 1;
+	flex:none;
 	display: block;
 	width: 100%;
+	padding:0px;
 }
 @media (min-width: 1100px) {
-	.signup-submit,.contact-submit{
+	.signup-submit,button[type="submit"]{
+		margin-left: 15px;
 		width: auto;
 		flex: 0.3;
 	}
