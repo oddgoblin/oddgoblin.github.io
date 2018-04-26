@@ -98,4 +98,4 @@ function smoothScroll(startTime, duration, start, end) {
 	}
 }
 
-document.addEventListener("DOMContentLoaded", init);
+window.addEventListener("load", init);
