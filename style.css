@@ -101,7 +101,7 @@ input[type="email"] {
 	height: 3em;
 	padding: 0 1.25em;
 	border: none;
-	margin:15px 0;
+	max-width: calc(100% - 3.5em);
 }
 
 .dark-page .contact-form input[type="text"],
@@ -117,10 +117,9 @@ input[type="submit"] {
 	color: #000000;
 	font: inherit;
 	height: 3em;
-	padding:0px;
+	padding: 0 1.25em;
 	border: none;
-	margin:15px 0;
-
+	white-space: nowrap;
 }
 
 .close-button {
@@ -188,21 +187,17 @@ input[type="submit"] {
 }
 
 /* SIGN UP! */
+
 .signup-page {
 	background: #FFFFFF;
 }
-.signup-submit,.contact-submit{
-	flex:none;
-	display: block;
-	width: 100%;
-	padding:0px;
+
+.signup-submit {
+	flex: 0;
 }
-@media (min-width: 1100px) {
-	.signup-submit,button[type="submit"]{
-		margin-left: 15px;
-		width: auto;
-		flex: 0.3;
-	}
+
+.signup-submit, .contact-submit {
+	display: block;
 }
 
 /* ABOUT US */
@@ -383,6 +378,15 @@ footer p {
 	body.menu-open .nav a::before {
 		content: "";
 		display: none;
+	}
+
+	.signup-submit {
+		flex: none;
+		width: calc(100% - 1em);
+	}
+
+	.contact-submit {
+		width: 100%;
 	}
 }
 
