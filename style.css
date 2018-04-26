@@ -77,7 +77,7 @@ color: #DDDDDD;
 }
 
 .page-content {
-	width: 36em;
+	width: 38em;
 	max-width: 100%;
 	margin: 3em;
 }
@@ -110,6 +110,7 @@ input[type="email"] {
 	color: #FFFFFF;
 }
 
+input[type="button"],
 input[type="submit"] {
 	background: #4FE3C1;
 	color: #000000;
@@ -117,6 +118,22 @@ input[type="submit"] {
 	height: 3em;
 	padding: 0 1.25em;
 	border: none;
+}
+
+.close-button {
+	text-decoration: none;
+}
+
+.close-button > input[type="button"] {
+	padding: 0 3em;
+	background: none;
+	color: #000000;
+	border: 1px #000000 solid;
+}
+
+.dark-page .close-button > input[type="button"] {
+	color: #FFFFFF;
+	border-color: #FFFFFF;
 }
 
 .rows {
