@@ -88,7 +88,7 @@ function onWheel(event) {
 
 function scrollTo(position) {
 	scrollIntervalID = setInterval(smoothScroll, 1000/60,
-		Date.now(), 400, window.scrollY, position);
+		Date.now(), 600, window.scrollY, position);
 }
 
 function smoothScroll(startTime, duration, start, end) {
