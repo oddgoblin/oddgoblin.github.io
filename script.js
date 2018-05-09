@@ -51,6 +51,8 @@ function onScroll(event) {
 function onWheel(event) {
 	if (scrollIntervalID !== undefined) {
 		event.preventDefault();
+		return false;
+	} else if (!event.cancelable) {
 		return;
 	}
 	var i, page;
