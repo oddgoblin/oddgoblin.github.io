@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119402946-1"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-119402946-1');
+		</script>
 		<meta charset="UTF-8" />
 		<title>Oddgoblin</title>
 		<link rel="stylesheet" type="text/css" href="./style.css">
@@ -71,7 +80,7 @@
 						<div class="row">
 							<input type="text" value="" name="MESSAGE" class="contact-message" placeholder="Your message" required="">
 						</div>
-						<div class="row">
+						<div class="row" style="display: none;">
 							<label class="contact-newsletter label">
 								<input class="switch" type="checkbox"  value="1" name="group[337][1]" id="mce-group[337]-337-0">
 								<span class="label-text">I want to receive your Weekly Newsletter</span>
