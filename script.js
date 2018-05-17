@@ -53,6 +53,7 @@ function onWheel(event) {
 		event.preventDefault();
 		return false;
 	} else if (!event.cancelable) {
+
 		return;
 	}
 	var i, page;
@@ -104,5 +105,6 @@ function smoothScroll(startTime, duration, start, end) {
 		window.scroll(window.scrollX, newPos);
 	}
 }
+
 
 window.addEventListener("load", init);
